@@ -1,189 +1,74 @@
 body {
-    color: white;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
-header {
+.container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    background-color: darkorange;
-    position: fixed;
-    width: 1500px;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 30px;
-    list-style-type: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-nav ul li a:hover {
-    font-weight: bolder;
-}
-
-.restaurant-image img {
-    width: 100%;
-    height: auto;
-}
-
-.pizza-specials {
-    color: black;
-    text-align: center;
-}
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: calc(33.33333% - 12px);
-    margin-bottom: 0px;
-}
-
-.responsive .gallery {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 100%;
-}
-
-.responsive .gallery img {
-    width: 100%;
-    height: auto;
-}
-
-.responsive .gallery .desc {
-    padding: 15px;
-    text-align: center;
-}
-
-
-#pic1, #pic2, #pic3
-{
-     transition: transform 2s ease
-}
-#pic1:hover {
-    transform: rotate(360deg);
-}
-
-#pic2:hover {
-    transform: scaleX(-1) rotateY(180deg);
-}
-
-
-#pic3:hover {
-    transform: rotate(-360deg);
-}
-
-
-.contact-form {
-    color: black;
-    text-align: center;
-    margin-top: 30px;
+    height: 100vh;
 }
 
 .form-container {
-    background-color: white;
-    display: inline-block;
-    text-align: left;
-    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     padding: 20px;
-    margin: 0 auto;
+    width: 400px;
+    max-height: 80vh;
+
 }
 
-label, #boxes {
-    color: gray;
+.form-container.left {
+    margin-right: 20px;
 }
 
-#boxes {
-    width: 280px;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+.form-container.right {
+    margin-left: 20px;
+    overflow: auto;}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 button {
-    width: 280px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 5px;
-    margin-top: 5px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }
 
-footer {
-    text-align: center;
-    background-color: darkorange;
-    padding: 15px;
+.error-message {
+    color: #ff0000;
     font-size: 14px;
-    margin: 0;
-}
-
-
-.set1
-{
-    margin-top: 50px;
-    background-color: whitesmoke;
-    padding-bottom: 150px;
-    margin-left: 15px;
-    margin-right: 15px;
-    color: black;
-    padding: 20px;
-    
-}
-
-.set2, .set3
-{
-    margin-top: 3px;
-     background-color: whitesmoke;
-    padding-bottom: 150px;
-    margin-left: 15px;
-    margin-right: 15px;
-    color: black;
-    padding: 20px;
-    
-}
-
-
-#Question1
-{
-    margin-top: 500px;
-    color: black ;
-    text-align: center;
-}
-#Question2
-{
-    margin-top: 10px;
-    color: black ;
-    text-align: center;
-}
-
-#Order
-{
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#Order:hover
-{
-        background-color: #45a049;
-
+    margin-top: 5px;
 }
